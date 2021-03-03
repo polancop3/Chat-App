@@ -25,7 +25,7 @@
     </div>
     <script> 
     $("#send").click(() => {
-        let message = {};
+        let message = { name: $("#name").val(), message : $("#message").val()};
         postMessage(message)
     
     }, getMessages())
